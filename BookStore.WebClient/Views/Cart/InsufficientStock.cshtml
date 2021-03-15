@@ -1,0 +1,15 @@
+﻿@model BookStore.WebClient.ViewModels.InsufficientStockViewModel
+
+@{
+    ViewBag.Title = "InsufficientStock";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Oops! Looks like we don't have the book titled "@Model.ItemName"</h2>
+
+<p>There was insufficient stock for the book with title "@Model.ItemName". </p>
+
+<p>We expect it to come in stock soon!</p>
+
+<p>Sorry for the inconvenience!</p>
+
